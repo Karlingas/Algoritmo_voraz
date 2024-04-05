@@ -12,8 +12,8 @@ public class Camion {
     public Camion(){
         this.capacidad=10000;
     }
-    public Camion(int capa){
-        this.capacidad=capa;
+    public Camion(int capacidad){
+        this.capacidad=capacidad;
     }
 
 }

@@ -1,5 +1,6 @@
 package org.example;
 
+import java.awt.color.CMMException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -18,8 +19,24 @@ public class Main {
             mercancias[i] = new Mercancia("Objeto "+(i+1),input.nextInt());
         }
 
-        Camion camion = new Camion();
+        System.out.println("¿El tamaño del camion es el estandar (10 toneladas) o personalizado? Ss/Nn");
 
+        String vacio = input.nextLine();
+
+        String respues = input.nextLine().toLowerCase();
+
+
+        Camion camion = null;
+
+        switch (respues){
+            case "s" :
+                System.out.println("Introduce la capacidad del camion en kilos");
+                camion = new Camion(input.nextInt());
+                break;
+            case "n" :
+                camion = new Camion();
+                break;
+        }
 
 
         Mercancia[] mercanciasR = Algoritmos.algorVoraz(mercancias,camion);
