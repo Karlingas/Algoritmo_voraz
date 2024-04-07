@@ -29,11 +29,11 @@ public class Main {
         Camion camion = null;
 
         switch (respues){
-            case "s" :
+            case "n" :
                 System.out.println("Introduce la capacidad del camion en kilos");
                 camion = new Camion(input.nextInt());
                 break;
-            case "n" :
+            case "s" :
                 camion = new Camion();
                 break;
         }
