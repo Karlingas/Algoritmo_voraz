@@ -1,7 +1,5 @@
-package org.example;
+package org.example.Practica1;
 
-import java.awt.color.CMMException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {

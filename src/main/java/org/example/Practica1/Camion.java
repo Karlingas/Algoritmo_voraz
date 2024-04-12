@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Practica1;
 
 
 import lombok.*;

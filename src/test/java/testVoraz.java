@@ -1,6 +1,6 @@
-import org.example.Algoritmos;
-import org.example.Camion;
-import org.example.Mercancia;
+import org.example.Practica1.Algoritmos;
+import org.example.Practica1.Camion;
+import org.example.Practica1.Mercancia;
 import org.junit.Assert;
 import org.junit.Test;
 
