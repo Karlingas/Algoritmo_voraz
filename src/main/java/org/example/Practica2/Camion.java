@@ -8,7 +8,7 @@ public class Camion {
     public Mercancia[] mercancias;
 
     public Camion(){
-        this.capacidad=10000;
+        this.capacidad=15000;
     }
     public Camion(int capacidad){
         this.capacidad=capacidad;
