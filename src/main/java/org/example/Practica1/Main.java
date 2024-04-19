@@ -22,8 +22,6 @@ public class Main {
         String vacio = input.nextLine();
 
         String respues = input.nextLine().toLowerCase();
-
-
         Camion camion = null;
 
         switch (respues){
