@@ -19,12 +19,22 @@ public class Main {
         //System.out.println("Ahora introduzca los objetos 1 a 1");
         log.info("Ahora introduzca los objetos 1 a 1");
         Mercancia[] mercancias = new Mercancia[10];
+        ArrayList<Mercancia> mercanciaArrayList = new ArrayList<>();
         for (int i = 0; i < mercancias.length; i++) {
             mercancias[i] = new Mercancia("Objeto "+(i+1),input.nextInt());
+            mercanciaArrayList.add(mercancias[i]);
         }
 
 
         Camion camion = new Camion();
-        mercancias = Algoritmo.algoDinamico(mercancias,camion);
+        mercanciaArrayList = Algoritmo.algoDinamico(mercanciaArrayList,camion);
+
+        int totalP = 0;
+        while (mercanciaArrayList.isEmpty()){
+            Mercancia result = mercanciaArrayList.get(0);
+            log.info(result.getNombre()+"\t\t"+result.getPeso());
+            totalP+= result.getPeso();
+            mercanciaArrayList.remove(0);
+        }
     }
 }
