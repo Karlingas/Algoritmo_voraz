@@ -15,10 +15,11 @@ public class Main {
         log.info("Porfavor, introduzca la cantidad de productos a transportar");
 
         Scanner input = new Scanner(System.in);
+        Mercancia[] mercancias = new Mercancia[input.nextInt()];
 
         //System.out.println("Ahora introduzca los objetos 1 a 1");
         log.info("Ahora introduzca los objetos 1 a 1");
-        Mercancia[] mercancias = new Mercancia[10];
+
         ArrayList<Mercancia> mercanciaArrayList = new ArrayList<>();
         for (int i = 0; i < mercancias.length; i++) {
             mercancias[i] = new Mercancia("Objeto "+(i+1),input.nextInt());
