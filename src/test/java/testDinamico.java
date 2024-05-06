@@ -134,6 +134,7 @@ public class testDinamico {
 
         Assert.assertEquals("El ArrayList debe ser vacío", resultadoEsperado, resultado);
     }
+
     @Test
     public void mezclaDeErrores(){
         Camion camion = new Camion();
